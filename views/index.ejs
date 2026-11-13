@@ -1,11 +1,44 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<%- include('partials/header') %>
+
+<div class="container my-5">
+
+  <!-- Hero section -->
+  <section class="hero mb-4">
+    <h2 class="display-5 fw-bold">Welcome to My Portfolio</h2>
+    <p>I'm Mohammad Bilal Sikandar, a Bachelor of Information Technology student specializing in Networking and IT Security at Ontario Tech University.</p>
+    <p>I'm passionate about computer networking, cybersecurity, and using technology to solve real-world problems. Through my academic projects, I've gained practical experience with network configuration, IP addressing, and programming.</p>
+    <p>Explore my portfolio to learn more about my background, technical skills, and projects.</p>
+    <a href="/projects" class="btn btn-primary btn-lg"><i class="fa-solid fa-arrow-right me-2"></i>Explore My Projects</a>
+  </section>
+
+  <!-- Areas of interest: Bootstrap grid with three cards -->
+  <section class="content-panel">
+    <h2>My Areas of Interest</h2>
+    <div class="row g-4">
+      <div class="col-12 col-md-4">
+        <div class="card h-100 p-3">
+          <i class="fa-solid fa-network-wired fa-2x icon-teal mb-3"></i>
+          <h3 class="h5">Computer Networking</h3>
+          <p class="mb-0">Designing networks, configuring devices, and understanding how systems communicate.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card h-100 p-3">
+          <i class="fa-solid fa-lock fa-2x icon-teal mb-3"></i>
+          <h3 class="h5">Cybersecurity</h3>
+          <p class="mb-0">Learning how to protect systems, networks, and information from security threats.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card h-100 p-3">
+          <i class="fa-solid fa-code fa-2x icon-teal mb-3"></i>
+          <h3 class="h5">Programming</h3>
+          <p class="mb-0">Developing technical solutions through programming, problem-solving, and practical projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,67 @@
+/* Custom theme based on my Assignment 1 colours, layered on top of Bootstrap */
+body {
+  background-color: #0b1426;
+  color: #e2e8f0;
+  line-height: 1.7;
+}
+
+/* Navbar uses the same 135-degree gradient as my Assignment 1 header */
+.custom-navbar {
+  background: linear-gradient(135deg, #0b1426, #172554, #1e40af);
+  border-bottom: 2px solid #5eead4;
+}
+.custom-navbar .nav-link { border-radius: 6px; margin: 2px 4px; }
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active { background-color: #2563eb; color: #fff; }
+
+h2 { color: #5eead4; }
+h3, h4, h5 { color: #93c5fd; }
+a { color: #5eead4; }
+a:hover { color: #fff; }
+
+/* Hero section on the home page (left-to-right gradient) */
+.hero {
+  background: linear-gradient(to right, #172554, #0f2944);
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 3rem 2rem;
+}
+
+/* Big rounded panel used to group content on each page */
+.content-panel {
+  background-color: #111f36;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Bootstrap cards recoloured to match the theme */
+.card {
+  --bs-card-bg: #192b45;
+  --bs-card-color: #e2e8f0;
+  --bs-card-border-color: #334155;
+  --bs-card-cap-bg: #192b45;
+}
+.project-card { border-left: 4px solid #5eead4; }
+.icon-teal { color: #5eead4; }
+
+/* Form fields */
+.form-control {
+  background-color: #0b1426;
+  color: #fff;
+  border-color: #64748b;
+}
+.form-control:focus {
+  background-color: #0b1426;
+  color: #fff;
+  border-color: #5eead4;
+  box-shadow: 0 0 0 0.2rem rgba(94, 234, 212, 0.25);
+}
+
+.btn-primary { background-color: #2563eb; border-color: #2563eb; }
+.btn-primary:hover { background-color: #1d4ed8; border-color: #1d4ed8; }
+
+.profile-img { border: 3px solid #5eead4; border-radius: 12px; max-width: 100%; height: auto; }
+
+.site-footer { background-color: #080f1e; border-top: 1px solid #334155; }

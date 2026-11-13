@@ -1,9 +1,22 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+// Each route renders one EJS view from the views folder.
+// 'title' goes in the <title> tag; 'active' highlights the current nav link.
+router.get('/', function (req, res, next) {
+  res.render('index', { title: 'Home', active: 'home' });
+});
+
+router.get('/about', function (req, res, next) {
+  res.render('about', { title: 'About Me', active: 'about' });
+});
+
+router.get('/projects', function (req, res, next) {
+  res.render('projects', { title: 'Projects', active: 'projects' });
+});
+
+router.get('/contact', function (req, res, next) {
+  res.render('contact', { title: 'Contact', active: 'contact' });
 });
 
 module.exports = router;
