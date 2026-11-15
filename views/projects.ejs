@@ -1,0 +1,52 @@
+<%- include('partials/header') %>
+
+<div class="container my-5">
+
+  <section class="content-panel">
+    <h2><i class="fa-solid fa-diagram-project me-2"></i>My Projects</h2>
+    <p class="mb-0">These projects highlight my practical experience in computer networking, programming, and web development through my studies at Ontario Tech University.</p>
+  </section>
+
+  <!-- Each project is a Bootstrap card; two per row on desktop, one per row on phones -->
+  <div class="row g-4">
+
+    <div class="col-12 col-md-6">
+      <div class="card project-card h-100 p-3">
+        <i class="fa-solid fa-network-wired fa-2x icon-teal mb-3"></i>
+        <h3 class="h5">Small Business Network Design</h3>
+        <p>Designed a small business network using Cisco 2911 routers and 2960 switches. Applied IPv4 subnetting, DHCP configuration, and routing concepts to support connectivity between network devices.</p>
+        <p class="mb-0"><strong>Technologies:</strong> Cisco Packet Tracer, IPv4, DHCP, Routing</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div class="card project-card h-100 p-3">
+        <i class="fa-brands fa-python fa-2x icon-teal mb-3"></i>
+        <h3 class="h5">Password Strength Analyzer</h3>
+        <p>Developed a Python program to evaluate password strength using characteristics such as length and character variety. Applied programming logic and conditional statements to assess password security.</p>
+        <p class="mb-0"><strong>Technologies:</strong> Python, Conditional Logic, Cybersecurity Fundamentals</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div class="card project-card h-100 p-3">
+        <i class="fa-solid fa-sitemap fa-2x icon-teal mb-3"></i>
+        <h3 class="h5">Network Design &amp; IPv4 Addressing Case Study</h3>
+        <p>Created a network design in Cisco Packet Tracer using variable-length subnet masking (VLSM) and static routing. Tested network connectivity using ICMP to verify communication between devices.</p>
+        <p class="mb-0"><strong>Technologies:</strong> Cisco Packet Tracer, VLSM, Static Routing, ICMP</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div class="card project-card h-100 p-3">
+        <i class="fa-solid fa-globe fa-2x icon-teal mb-3"></i>
+        <h3 class="h5">Personal Portfolio Website</h3>
+        <p>Developed a personal portfolio website, first as a four-page HTML5 and CSS3 site, then rebuilt with Node.js, Express, EJS, and Bootstrap. The project focuses on routing, reusable templates, responsive design, and deployment.</p>
+        <p class="mb-0"><strong>Technologies:</strong> Node.js, Express, EJS, Bootstrap, Git, GitHub</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<%- include('partials/footer') %>
