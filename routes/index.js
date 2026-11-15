@@ -2,7 +2,6 @@ var express = require('express');
 var router = express.Router();
 
 // Each route renders one EJS view from the views folder.
-// 'title' goes in the <title> tag; 'active' highlights the current nav link.
 router.get('/', function (req, res, next) {
   res.render('index', { title: 'Home', active: 'home' });
 });
